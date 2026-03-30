@@ -99,7 +99,7 @@ The project consists of three main computation modules and two analysis scripts:
   This dertermines the correlation length of TCF.
 * **Environment**
 
-  If you want to use GPU acceleration, you need to  match versions of Cuda, GPU, DMFF, JAX and DeepMD !
+  If you want to use GPU acceleration, you need to  match versions of Cuda, GPU, DMFF, JAX and DeepMD!
 
 ## Dependencies
 
