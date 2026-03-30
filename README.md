@@ -31,11 +31,6 @@ A central idea from the paper is the **ML-facilitated heat flux calculation**: T
     ├── tc.sh                            # Automated integration script
     ├── calc_corr.py                     # Autocorrelation calculator
     └── integrate.py                     # Integration script
-├── Data
-    ├── j_data                           # Total heat flux files of PEO[10] for 20 NVE trajectories (Example)
-    ├── kappa.txt                        # Thermal conductivity data with uncertainty
-    ├── corr.txt                         # Heat flux time correlation function (HFTCF)
-    ├── hcf.txt                          # Integration of HFTCF
 ```
 
 ## Theory
