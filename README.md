@@ -6,7 +6,7 @@ This repository provides a tool (named PolyThermAI) for calculating the thermal 
 
 The workflow follows a three-step process:
 
-1. **Dynamics Sampling** (`PhyNEO`): Generate accurate molecular dynamics trajectories (positions and velocities) using ab initio hybrid potential.
+1. **Dynamics Sampling** (`PhyNEO or other polymer MLPs`): Generate accurate molecular dynamics trajectories (positions and velocities) using ab initio hybrid potential.
 2. **Heat Flux Calculation** (`compt_dp_J.py`, `compute_eann_J.py`, `compute_gnn_J.py`): Compute the instantaneous heat flux vector ***J***  for each frame of the trajectory.
 3. **Thermal Conductivity Calculation** (`calc_corr.py`, `integrate.py`): Compute the heat flux autocorrelation function (HFACF) and integrate it using GK relation to obtain *κ*.
 
