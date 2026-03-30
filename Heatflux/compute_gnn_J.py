@@ -196,7 +196,7 @@ if __name__ == '__main__':
     # Merge convection and conduction terms
     with open('J_gnn.txt', 'w') as f2:
         J_conduct = np.genfromtxt('J_conduct.txt')
-        J_convect = jnp.einsum('ij,ijk->ik', ae_list, velocities[Nf1:Nf2])
+        J_convect = jnp.einsum('ij,ijk->ik', ae_list, velocities)
         J_total = J_convect + jnp.array(J_conduct)
         for J in J_total:
             print(*J, file=f2)
