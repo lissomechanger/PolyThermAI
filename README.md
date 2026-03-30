@@ -10,7 +10,7 @@ The workflow follows a three-step process:
 2. **Heat Flux Calculation** (`compt_dp_J.py`, `compute_eann_J.py`, `compute_gnn_J.py`): Compute the instantaneous heat flux vector ***J***  for each frame of the trajectory.
 3. **Thermal Conductivity Calculation** (`calc_corr.py`, `integrate.py`): Compute the heat flux autocorrelation function (HFACF) and integrate it using GK relation to obtain *κ*.
 
-A central idea from the paper is the **ML-facilitated heat flux calculation**: The local parts are directly computed using automatic diffrentiable (AD) technique, and the nonlocal long-range polarizable term is computed using the ML technique. As the analytical heat flux of complex polarizable interaction is difficult to derive, a localized ML model (e.g., Deep Potential) is trained to fit the non-bonding energy and virial, which are then used to compute the heat flux. This approach is validated by comparing with exact results from classical polymer force fields (eg., PCFF, OPLS).
+A central idea from the paper is the **ML-facilitated heat flux calculation**: The local heat flux terms are directly computed using automatic diffrentiable (AD) technique, and the nonlocal long-range polarizable heat flux is computed using the ML technique. As the analytical heat flux of complex polarizable interaction is difficult to derive, a localized ML model (e.g., Deep Potential) is trained to fit the non-bonding energy and virial, which are then used to compute the heat flux. This approach is validated by comparing with exact results from classical polymer force fields (eg., PCFF, OPLS).
 
 ## Repository Structure
 
