@@ -55,17 +55,17 @@ The project consists of three main computation modules and two analysis scripts:
 
    - Input: `pos.npy`, `vel.npy`, `box.npy, atype.npy (dp element type file)`, `graph.pb (dp model)`
    - Output: J_dp.txt
-   - Usage:
+   - Usage: see Dos/ML_heatflux.md
 2. **`compute_eann_J.py`**: Calculates heat flux using EANN (Embedded Atom Neural Network) potential from DMFF
 
    - Input: initial PDB file (for topology), trajectory (xyz format), velocities (npy format), EANN parameters
    - Output: `J_eann.txt`
-   - Usage:
+   - Usage: see Dos/EANN_heatflux.md
 3. **`compute_gnn_J.py`**: Calculates heat flux using sGNN (Subgraph Neural Network) potential from DMFF
 
    - Input: initial PDB file (for topology), trajectory (xyz format), velocities (npy format), sGNN parameters
    - Output: `J_gnn.txt`
-   - Usage:
+   - Usage: see Dos/SGNN_heatflux.md
 
 ### Analysis Module
 
